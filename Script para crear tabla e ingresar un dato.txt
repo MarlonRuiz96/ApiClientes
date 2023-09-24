@@ -1,0 +1,24 @@
+//Query para crear e insertar tabla
+
+CREATE TABLE Clientes (
+    idcliente INT PRIMARY KEY AUTO_INCREMENT,
+    primernombre VARCHAR(255),
+    segundonombre VARCHAR(255),
+    otronombre VARCHAR(255),
+    primerapellido VARCHAR(255),
+    segundoapellido VARCHAR(255),
+    otroapellido VARCHAR(255),
+    genero VARCHAR(255),
+    fechanacimiento DATE,
+    segmento VARCHAR(50),
+    sueldo DECIMAL(10,2),
+    dpi VARCHAR(20),
+    correo VARCHAR(255),
+    telefono VARCHAR(20),
+    direccion VARCHAR(255),
+    fechacreacion TIMESTAMP
+);
+
+INSERT INTO Clientes (primernombre, segundonombre, otronombre, primerapellido, segundoapellido, otroapellido, genero, fechanacimiento, segmento, sueldo, dpi, correo, telefono, direccion, fechacreacion)
+VALUES
+('Juan', 'Carlos', 'Andrés', 'Pérez', 'Gómez', 'Ramírez', 'Masculino', '1990-05-15', 'VIP', 2500.00, '12345678901234567', 'juan.perez@example.com', '555-123-4567', '123 Main St', '2023-09-23 12:00:00');
